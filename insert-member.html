@@ -1,0 +1,28 @@
+<!-- begins the HTML code -->
+<!doctype html>
+<html>
+  <head>
+    <title>Member Information Insert or Update</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h3>Select Preferences:</h3>
+      <form method="post" action="insert-member.php">
+        <div><label>NetID: </label>         
+            <input type="varchar" name="NETID">
+        </div>
+		<div><label>First Name: </label>
+            <input type="varchar" name="FirstName">
+        </div>  
+        <div><label>Last Name: </label>
+            <input type="varchar" name="LastName">
+        </div> 
+        <div><label>Grad Year: </label>
+            <input type="number" name="GradYear">
+        </div> 
+		<div><input type="submit" name="submit"></div>
+      </form>
+    </div>
+  </body>
+</html>

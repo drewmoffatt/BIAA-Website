@@ -1,0 +1,125 @@
+/* CSS for ajax loading spinning icon */
+/* set image max width to 100% */
+img {
+max-width: 100%;
+height: auto;
+width: auto\9; /* ie8 */
+}
+
+#ajaxloader {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    border: 16px solid #3C599B;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}  
+
+ul {list-style-type: none;}
+body {font-family: 'Montserrat', sans-serif;}
+/* CSS for the calendar */
+.calendar {
+    width: 960px;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 40px;
+}
+.calendar-nav {
+    background: #3c599b;
+    padding: 5px;
+    border-radius: 2px;
+}
+.calendar-nav a {
+    color: #ddd;
+    float: none;
+}
+.calendar-nav a:hover,
+.calendar-nav a:focus {
+    color: #bbb;
+}
+.calendar-nav select {
+    width: auto;
+}
+.calendar-days,
+.calendar-dates {
+    width: 100%;
+    float: left;
+}
+.calendar-days ul,
+.calendar-dates ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.calendar-days ul li {
+    float: left;
+    display: block;
+    width: 137px;
+    text-align: center;
+    min-height: 0;
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+.calendar-dates ul li {
+    float: left;
+    width: 136px;
+    height: 110px;
+    text-align: center;
+    box-shadow: 0 0 0 1px #ccc;
+    min-height: 0;
+    margin: 0 0 1px 1px;
+    padding: 0;
+    position: relative;
+}
+.calendar-dates ul li span {
+    float: left;
+    margin-left: 10px;
+}
+.calendar-date {
+    cursor: pointer;
+    cursor: hand;
+}
+.calendar-date:hover {
+    background: #ddd;
+}
+.calendar-today {
+    background: #e3e3e3;
+}
+.calendar-today:hover,
+.calendar-today:focus {
+    background: #ddd;
+}
+.calendar-event {
+    background: #4682b4;
+    color: #fff;
+}
+.calendar-event:hover,
+.calendar-event:focus {
+    background: #3e739f;
+}
+.calendar-both {
+    background: #0b930b;
+    color: #fff;
+}
+.calendar-both:hover,
+.calendar-both:focus {
+    background: #0a8a0a;
+}
+.total-events {
+    margin: 35px 28px;
+    font-weight: bold;
+    font-style: italic;
+}
+/* enable if you want to hide the border on those with no dates (e.g. blank boxes)
+.no-date {
+    box-shadow: 0 0 0 0 !important;
+} 
+*/
+
+/* CSS fixes */
+.clear {
+    clear: both;
+}
